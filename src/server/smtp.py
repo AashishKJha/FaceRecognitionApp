@@ -2,8 +2,8 @@ import smtplib
  
 server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
-server.login("aashishjha.1994@gmail.com", "")
- 
+server.login("", "")
+# Add multiple emails to send mail
 msg = "Hello!"
-server.sendmail("aashishjha.1994@gmail.com", "adityanew2014@gmail.com", msg)
+server.sendmail("", "", msg)
 server.quit()
